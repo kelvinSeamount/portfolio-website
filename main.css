@@ -10,7 +10,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "poppins", sans-serif;
-  overflow-x: hidden;
 }
 
 a {
@@ -358,25 +357,11 @@ VIEW---*/
   }
 }
 
-/*TABLET-LANDSCAPE--VIEW*/
-@media (max-width: 804px) {
-  .bg-hero {
-    background-position: 80%;
-  }
-  .hero--center {
-    max-width: 650px;
-  }
-
-  .card {
-    width: 320px;
-  }
-  .grid--2--cols {
-    gap: 30px;
-  }
-}
-
 /*TABLET--VIEW*/
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .btn-mobile-nav {
     display: block;
   }
@@ -507,6 +492,6 @@ VIEW---*/
 
   .email--title {
     font-size: 20px;
-    letter-spacing: 0;
+    letter-spacing: 0px;
   }
 }
