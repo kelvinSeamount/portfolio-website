@@ -41,7 +41,8 @@ li {
   min-height: 70px;
   margin: 0 auto;
   padding: 0;
-  width: 90%;
+  width: 100%;
+  position: relative;
 }
 
 .nav-brand {
@@ -252,7 +253,6 @@ li {
 
 .about--title:hover {
   transition: all 0.7s ease-in-out;
-  /*border-bottom: 3px solid #334;*/
   transform: translateY(-15px);
 }
 
@@ -360,6 +360,10 @@ VIEW---*/
 
 /*TABLET--VIEW*/
 @media (max-width: 768px) {
+  .nav-bar {
+    width: 100%;
+  }
+
   .btn-mobile-nav {
     display: block;
   }
@@ -449,9 +453,12 @@ VIEW---*/
   }
 
   .card {
-    width: 320px;
+    width: 300px;
   }
 
+  .portfolio--subhead {
+    font-size: 20px;
+  }
   .skills--heading {
     font-size: 40px;
     text-align: center;
@@ -474,7 +481,7 @@ VIEW---*/
 
   .email--title {
     font-size: 20px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
   }
 }
 
