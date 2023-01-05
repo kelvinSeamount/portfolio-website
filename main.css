@@ -10,6 +10,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-family: "poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -359,9 +360,6 @@ VIEW---*/
 
 /*TABLET--VIEW*/
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .btn-mobile-nav {
     display: block;
   }
@@ -429,7 +427,7 @@ VIEW---*/
 }
 
 /*-- LARGE--MOBILE--VIEW--*/
-@media (max-width: 475px) {
+@media (max-width: 425px) {
   .bg-hero {
     background-position: 80%;
   }
