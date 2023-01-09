@@ -242,7 +242,7 @@ text-align: center;
 .introduction {
   padding: 180px 0;
   padding-bottom: 100px;
-  background: linear-gradient(#131313ed,#1313134d), url('/Img/download.jpg');
+  background: linear-gradient(#131313ed,#1313134d), url('Img/emeka 1.svg');
   background-size: cover;
   background-color: #000000;
 }
