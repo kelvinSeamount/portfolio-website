@@ -3,86 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Website</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Montserrat:wght@200;300;400;500;600&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    <section class="bg-hero">
-      <header class="nav-bar">
-        <a href="#" class="nav-brand">
-          <img src="Img/E.K (1).svg" alt="my logo" class="logo" />
-        </a>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li><a class="nav-links" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-links" href="#about">About</a></li>
-            <li><a class="nav-links" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
 
-        <button class="btn-mobile-nav">
-          <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
-        </button>
-      </header>
-
-      <div class="container">
-        <div class="hero--center">
-          <h1 class="hero-title">Hi, I'm Emeka.</h1>
-          <p class="hero-text">
-            Studying Msc. Marine Geosciences at Unviersität Bremen. I started
-            web devlopement out of curiosity and eventually it became a hobby, i
-            thought it would be cool to offfer my skills to clients who want
-            awesome web experiences,thus here we are.
-          </p>
-          <button class="resume"><a href="">Resume</a></button>
+    <!-- Navbar Section --> 
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#introduction" id="navbar__logo"><img src="Img/E.K (1).svg" alt="my logo" class="logo" /></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#" class="navbar__links" id="portfolio-page">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__links" id="about-page">About</a>    
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__links" id="contact-page">Contact</a>    
+          </li>
+        </ul>
       </div>
-    </section>
+  </nav>
 
-    <section class="bg--portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="portfolio--title">Portfolio</h2>
+    <!-- Introduction Section -->
+    <div class="introduction" id="introduction">
+      <div class="introduction__container">
+        <h1 class="introduction__heading">Hi, I'm Emeka.</h1>
+        <p class="introduction__description">
+          Studying Msc. Marine Geosciences at Unviersität Bremen. I started
+          web devlopement out of curiosity and eventually it became a hobby, i
+          thought it would be cool to offfer my skills to clients who want
+          awesome web experiences,thus here we are.
+        </p>
+        <a href="#" rel="nofollow noopener" class="introduction__btn">Resume</a>
       </div>
+  </div>
 
-      <div class="container grid grid--2--cols">
-        <div class="card">
-          <a href="https://kelvinseamount.github.io/StabucksDemo-landpage/">
-            <img
-              src="Img/download.jpg"
-              alt="starbucks"
-              class="starbucks--demo"
-            />
-          </a>
-          <div class="portfolio--content">
-            <a href="https://kelvinseamount.github.io/StabucksDemo-landpage/">
-              <h3 class="portfolio--subhead">Starbucks demo</h3>
-            </a>
-            <span class="descriptions">
-              This is a starbucks demo landing page
-            </span>
+    <!-- My Work 3/3 -->
+    <div class="mywork" id="mywork">
+      <h1>Portfolio</h1>
+      <div class="mywork__wrapper">
+          <div class="mywork__card">
+              <h2>Starbucks demo</h2>
+              <p>This is a starbucks demo landing page</p>
+              <a href="https://kelvinseamount.github.io/StabucksDemo-landpage/" target="_blank" rel="nofollow noopener" class="mywork__btn" aria-label="Startbucks"><button type="button">Learn more about demo</button></a>
           </div>
-        </div>
-
-        <div class="card">
-          <img src="Img/unsplash.jpg" alt="projects" class="starbucks--demo" />
-          <div class="portfolio--content">
-            <h3 class="portfolio--subhead">Upcoming projects</h3>
-            <span class="descriptions">
-              More projects to come soon look out for..
-            </span>
+          <div class="mywork__card" id="Spacery">
+              <h2>Upcoming projects</h2>
+              <p>More projects to come soon look out for...</p>
+              <a href="#" class="mywork__btn" aria-label="Work"><button type="button">More projects</button></a>
           </div>
-        </div>
       </div>
-    </section>
+  </div>
 
     <section class="bg--skills">
       <div class="container">
@@ -152,11 +131,6 @@
         <p class="copyright">Copyright © Emeka Kelvin Nwachukwu</p>
       </div>
     </section>
-    <script src="script.js"></script>
-
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-    <!--for safari browers-->
-    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="/scripts/navbar.js"></script>
   </body>
 </html>
