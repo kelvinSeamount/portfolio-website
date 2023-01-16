@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Website</title>
+    <title>Portf</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,40 +14,42 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
+
   <body>
-    <section class="bg-hero">
-      <header class="nav-bar">
-        <a href="#" class="nav-brand">
-          <img src="Img/E.K (1).svg" alt="my logo" class="logo" />
-        </a>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li><a class="nav-links" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-links" href="#about">About</a></li>
-            <li><a class="nav-links" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <!--Header-->
+    <header class="header">
+      <a href="#" class="nav-brand">
+        <img src="Img/E.K (1).svg" alt="my logo" class="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="nav-links" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-links" href="#about">About</a></li>
+          <li><a class="nav-links" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-        <button class="btn-mobile-nav">
-          <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
-          <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
-        </button>
-      </header>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
+    </header>
 
-      <div class="container">
-        <div class="hero--center">
-          <h1 class="hero-title">Hi, I'm Emeka.</h1>
-          <p class="hero-text">
-            Studying Msc. Marine Geosciences at Unviersität Bremen. I started
-            web devlopement out of curiosity and eventually it became a hobby, i
-            thought it would be cool to offfer my skills to clients who want
-            awesome web experiences,thus here we are.
-          </p>
-          <button class="resume"><a href="">Resume</a></button>
-        </div>
+    <!--Hero section-->
+    <section class="hero-bg">
+      <div class="hero--center">
+        <h1 class="hero-title">Hi, I'm Emeka.</h1>
+        <p class="hero-text">
+          Studying Msc. Marine Geosciences at Unviersität Bremen. I started web
+          devlopement out of curiosity and eventually it became a hobby, i
+          thought it would be cool to offfer my skills to clients who want
+          awesome web experiences,thus here we are.
+        </p>
+        <button class="resume"><a href="">Resume</a></button>
       </div>
     </section>
 
+    <!--Portfolio section-->
     <section class="bg--portfolio" id="portfolio">
       <div class="container">
         <h2 class="portfolio--title">Portfolio</h2>
@@ -132,7 +134,7 @@
     </section>
 
     <section class="bg--footer" id="contact">
-      <div class="container">
+      <div class="container--footer">
         <h3 class="email--title">kelvinnwachukwu89@gmail.com</h3>
         <p class="footer--text">
           Always down to collabrate when i have the time. I'm hoping to further
@@ -140,23 +142,22 @@
         </p>
       </div>
 
-      <div class="container">
-        <a class="social--links" href="https://github.com/kelvinSeamount"
-          ><img src="img/IMAGE.svg" alt="github"
-        /></a>
-        <a
-          class="social--links"
-          href="www.linkedin.com/in/emeka-nwachukwu-882b9b10a"
-          ><img src="img/IMAGE (1).svg" alt="linkedin"
-        /></a>
+      <div class="container--footer">
+        <div>
+          <a class="social--links" href="https://github.com/kelvinSeamount"
+            ><img src="img/IMAGE.svg" alt="github"
+          /></a>
+          <a
+            class="social--links"
+            href="www.linkedin.com/in/emeka-nwachukwu-882b9b10a"
+            ><img src="img/IMAGE (1).svg" alt="linkedin"
+          /></a>
+        </div>
         <p class="copyright">Copyright © Emeka Kelvin Nwachukwu</p>
       </div>
     </section>
     <script src="script.js"></script>
 
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-    <!--for safari browers-->
-    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   </body>
 </html>
