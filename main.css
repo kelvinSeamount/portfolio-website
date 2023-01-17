@@ -20,13 +20,12 @@ li {
 
 .header {
   background-color: #243b55;
-  height: 70px;
+  height: 5rem;
   padding: 0 4.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
 }
 
 .nav-brand {
@@ -80,6 +79,23 @@ li {
   height: 2rem;
   width: 2rem;
   color: #f1f8ef;
+}
+
+/*Sticky--Navigation*/
+.sticky-nav .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #243b55;
+  z-index: 999;
+  width: 100%;
+  height: 6rem;
+  padding-block: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+}
+
+.sticky-nav .hero-bg {
+  margin-top: 5rem;
 }
 
 /*hero-section*/
