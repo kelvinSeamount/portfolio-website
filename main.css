@@ -526,3 +526,9 @@ li {
     width: 344px;
   }
 }
+
+@media (max-width: 1440px) {
+  .bg--portfolio {
+    height: 14ovh;
+  }
+}
