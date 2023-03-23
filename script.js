@@ -1,5 +1,12 @@
 const btnNav = document.querySelector(".btn-mobile-nav");
 const btnHeader = document.querySelector(".header");
+const navLinks = document.querySelectorAll(".nav-links");
+console.log(navLinks);
+navLinks.forEach((navlink) => {
+  navlink.addEventListener("click", function () {
+    btnHeader.classList.remove("nav-open");
+  });
+});
 
 btnNav.addEventListener("click", function () {
   btnHeader.classList.toggle("nav-open");
